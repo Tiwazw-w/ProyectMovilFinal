@@ -9,10 +9,12 @@ public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField] float velocidad;
     [SerializeField] float rotationSpeed;
-    [SerializeField] Transform MyTransform;
     Vector3 Direccion;
     Vector3 DireccionFinal;
     Vector2 currentRotation; // Almacenar la rotación actual
+
+    [SerializeField] Joystick JoystickMovimiento;
+    [SerializeField] Joystick JoystickRotacion;
 
     private void Awake()
     {
@@ -27,24 +29,34 @@ public class MovimientoJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MyTransform.position += DireccionFinal * velocidad * Time.deltaTime;
+        Movimiento();
+        Rotar();
     }
 
 
-    public void Movimiento(InputAction.CallbackContext context)
+    public void Movimiento()
     {
-        Direccion = context.ReadValue<Vector2>();
+        Direccion = new Vector2
+        {
+            x = JoystickMovimiento.Horizontal + Input.GetAxis("Horizontal"),
+            y = JoystickMovimiento.Vertical + Input.GetAxis("Vertical")
+        };
 
         // Calcula el vector resultado combinando la dirección hacia adelante con la dirección de entrada
         DireccionFinal = transform.forward * Direccion.y + transform.right * Direccion.x;
         DireccionFinal.y = 0;
         DireccionFinal = DireccionFinal.normalized;
+        transform.position += DireccionFinal * velocidad * Time.deltaTime;
     }
 
 
-    public void Rotar(InputAction.CallbackContext context)
+    public void Rotar()
     {
-        Vector2 mouseDelta = context.ReadValue<Vector2>();
+        Vector2 mouseDelta = new Vector2
+        {
+            x = JoystickRotacion.Horizontal,
+            y = JoystickRotacion.Vertical
+        };
 
         // Calcular la nueva rotación
         currentRotation.x -= mouseDelta.y * rotationSpeed * Time.deltaTime; // Invertir el valor para la rotación en el eje X
@@ -54,8 +66,8 @@ public class MovimientoJugador : MonoBehaviour
         // Aplicar la rotación al objeto
         transform.rotation = rotacion.CalcularRotacion(currentRotation);
         DireccionFinal = transform.forward * Direccion.y + transform.right * Direccion.x;
-        DireccionFinal.y = 0;
-        DireccionFinal = DireccionFinal.normalized;
+        //DireccionFinal.y = 0;
+        //DireccionFinal = DireccionFinal.normalized;
     }
 
 }
