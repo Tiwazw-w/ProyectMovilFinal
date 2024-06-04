@@ -7597,7 +7597,7 @@ MonoBehaviour:
   rotationSpeed: 100
   moveJoystick: {fileID: 1088184923}
   rotateJoystick: {fileID: 1684600305}
-  InputAction: 0
+  InputAction: 1
 --- !u!1001 &1199017615
 PrefabInstance:
   m_ObjectHideFlags: 0

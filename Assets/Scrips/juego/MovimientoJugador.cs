@@ -17,11 +17,8 @@ public class Movimientojugador : MonoBehaviour
 
     private void Update()
     {
-        if (InputAction)
-        {
-            Move();
-            Rotate();
-        }
+        Move();
+        Rotate();
     }
 
     private void Move()
