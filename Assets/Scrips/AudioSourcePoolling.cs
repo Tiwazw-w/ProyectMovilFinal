@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,9 @@ public class AudioSourcePoolling : MonoBehaviour
     {
         for (int i = 0; i < ListaDeAudios.Count; i++)
         {
-            StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+            //StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+            AudioSource audioSource = ListaDeAudios[i];
+            ListaDeAudios[i].DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(() => FadeOutDoTween(audioSource));
         }
     }
 
@@ -32,7 +35,9 @@ public class AudioSourcePoolling : MonoBehaviour
         {
             if (ListaDeAudios[i].outputAudioMixerGroup == nuevoGrupo)
             {
-                StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+                //StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+                AudioSource audioSource = ListaDeAudios[i];
+                ListaDeAudios[i].DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(() => FadeOutDoTween(audioSource));
             }
         }
     }
@@ -45,7 +50,9 @@ public class AudioSourcePoolling : MonoBehaviour
             {
                 if (ListaDeAudios[i].outputAudioMixerGroup == nuevoGrupo[j])
                 {
-                    StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+                    //StartCoroutine(FadeOutCoroutine(ListaDeAudios[i]));
+                    AudioSource audioSource = ListaDeAudios[i];
+                    ListaDeAudios[i].DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(() => FadeOutDoTween(audioSource));
                 }
             }
 
@@ -67,6 +74,13 @@ public class AudioSourcePoolling : MonoBehaviour
 
         audioSource.Stop();
         audioSource.volume = startVolume; // Restaura el volumen original
+        CantidadDeAudiosActivos += 1;
+    }
+    void FadeOutDoTween(AudioSource audioSource)
+    {
+        print("seParo");
+        audioSource.Stop();
+        audioSource.volume = 1;
         CantidadDeAudiosActivos += 1;
     }
     #endregion
