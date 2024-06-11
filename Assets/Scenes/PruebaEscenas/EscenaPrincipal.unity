@@ -1097,6 +1097,210 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084791659}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1106641620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106641623}
+  - component: {fileID: 1106641622}
+  - component: {fileID: 1106641621}
+  m_Layer: 0
+  m_Name: ControladorDeEscenas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1106641621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106641620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4091f8d356dedd41887da0d0fdecb82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ElControlador: {fileID: 1106641622}
+--- !u!114 &1106641622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106641620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8323f3a80333df7438f0ca14d88bd4c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListaDeListas:
+  - LasEscenas:
+    - {fileID: 11400000, guid: fdf73d3d49401004991c2fc6419dab0a, type: 2}
+    - {fileID: 11400000, guid: cc7d55b3280fa0a4dae73a05546e73a0, type: 2}
+    - {fileID: 11400000, guid: c7c6a7d4cf23af248a1b915927751479, type: 2}
+    - {fileID: 11400000, guid: 6054ceb1846647848a842d134ba62ac1, type: 2}
+    - {fileID: 11400000, guid: 66e7a2b97762af345a880cd3ae944818, type: 2}
+    - {fileID: 11400000, guid: b9db608035e10fc48b7a1b7b064de758, type: 2}
+    - {fileID: 11400000, guid: f0135c70d7e507d4391148f3a9d7c9c4, type: 2}
+    - {fileID: 11400000, guid: 9343a8628f14dd94c999394564a61f9b, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 4690a34ef76893c448d557f8d7875d92, type: 2}
+    - {fileID: 11400000, guid: 01307f607ada901499d74092da209569, type: 2}
+    - {fileID: 11400000, guid: 1473d06b05c9ff04590c264f381ceecf, type: 2}
+    - {fileID: 11400000, guid: 01b2c4969ae4d754d994eb70c654bef4, type: 2}
+    - {fileID: 11400000, guid: 148a563e8f841e845b1b96e094b61fd6, type: 2}
+    - {fileID: 11400000, guid: 1161b24c50eaf3f48b4f5ea6e79ccb25, type: 2}
+    - {fileID: 11400000, guid: e02cd2ea516af3149ae094cf248f1f05, type: 2}
+    - {fileID: 11400000, guid: c175bdbe7c06ea3408561ec353a551e3, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 41307252263dc3e46956d4f06e7cce2e, type: 2}
+    - {fileID: 11400000, guid: be55b81948e64294694dd6aefbcbdb29, type: 2}
+    - {fileID: 11400000, guid: ec24f271ad26b08418ee6dcbc06a059f, type: 2}
+    - {fileID: 11400000, guid: 40b5965ddcbc317449d5cea1641b26d9, type: 2}
+    - {fileID: 11400000, guid: caad4c633384c724f92e1210a5836ff2, type: 2}
+    - {fileID: 11400000, guid: ad6ad5bff8657b14aafc1648ff01c7e4, type: 2}
+    - {fileID: 11400000, guid: 17f84d4e551e04e41867213655f2103a, type: 2}
+    - {fileID: 11400000, guid: fdefe8a9496351b488a4dab27d41cdab, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: eefbbd97cb7c9af408d4798aeb8c3bd0, type: 2}
+    - {fileID: 11400000, guid: cf7186a5fc8bc894196e067c98aa7889, type: 2}
+    - {fileID: 11400000, guid: c13086f03581e8543a968c5275fe0091, type: 2}
+    - {fileID: 11400000, guid: f5e0b19c2c81a304e921560877bf58d3, type: 2}
+    - {fileID: 11400000, guid: 4ff8a6fd4916d3448b75bc28b29a7f31, type: 2}
+    - {fileID: 11400000, guid: f6a89afaeeee2af4a88e54619bc5e5a6, type: 2}
+    - {fileID: 11400000, guid: 99ce1bbda1397f843ada0e2fd3219c18, type: 2}
+    - {fileID: 11400000, guid: cfc28b260b49f2d47bcba566e7da0aa9, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 3e6bd927cbbc4f244afba2f883a17824, type: 2}
+    - {fileID: 11400000, guid: 1fbcf07303f44a048923851e37557a4a, type: 2}
+    - {fileID: 11400000, guid: e555865c3f5036943877bd1282fe651c, type: 2}
+    - {fileID: 11400000, guid: f52f294eee0accc47a5f19dcd3807b29, type: 2}
+    - {fileID: 11400000, guid: 3c15ea2ca506d7f4a8d799df23cba488, type: 2}
+    - {fileID: 11400000, guid: 5cd32c0a5d0ca494087dd38094fc246f, type: 2}
+    - {fileID: 11400000, guid: ee3cd08429a31b946a617763b335de07, type: 2}
+    - {fileID: 11400000, guid: aee5167f582eb8740a4f2dc5b9f6b68e, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 63cf7d9afdbcc5b40a36aa14299edf84, type: 2}
+    - {fileID: 11400000, guid: 405f5d362be25c641b187ab698531667, type: 2}
+    - {fileID: 11400000, guid: a536afb4fa09e8c4a8b5d6efc1dc6637, type: 2}
+    - {fileID: 11400000, guid: 5e0584ddff7040c45bd396d793b1db4a, type: 2}
+    - {fileID: 11400000, guid: a47e858dd8439c94495df0a3dedf23cc, type: 2}
+    - {fileID: 11400000, guid: 74942440352e9744399a2bd1954e519b, type: 2}
+    - {fileID: 11400000, guid: b461be81880fcf143b1fa2fad93f282d, type: 2}
+    - {fileID: 11400000, guid: 137f6abf78f60ce48b45903bb2ecbf5c, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 73bd3f95a4c0ec94fb83edd4d2f76894, type: 2}
+    - {fileID: 11400000, guid: 64965f7b08859774696ad23eb88a811c, type: 2}
+    - {fileID: 11400000, guid: 975e2342115dbff498dabf70b9d60f53, type: 2}
+    - {fileID: 11400000, guid: 45f0ae83b0ec47d44b5fa337341d652f, type: 2}
+    - {fileID: 11400000, guid: 4bb42ea18329f5f4591e4d8686242245, type: 2}
+    - {fileID: 11400000, guid: f4212f681a037b844abc7985925b746c, type: 2}
+    - {fileID: 11400000, guid: 99758d4ef275a574187567c19caeebc3, type: 2}
+    - {fileID: 11400000, guid: 931cb1770884e8641b652449ccc61d66, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: c427406a3e0e6734485c08a8631d91ec, type: 2}
+    - {fileID: 11400000, guid: 3e9abbf60d05f6e458f34abdc117cd2b, type: 2}
+    - {fileID: 11400000, guid: 1ac7aed6c25ee9042ad85f8b866073cd, type: 2}
+    - {fileID: 11400000, guid: 68d1ac7b0dca11645aa59beb1ba64fd1, type: 2}
+    - {fileID: 11400000, guid: 5c29af5b963f85140b8c15d038feb0e0, type: 2}
+    - {fileID: 11400000, guid: 1eea7da4b17322f409b457153cc9697b, type: 2}
+    - {fileID: 11400000, guid: 29b86e516c063dd4fbb97a7997b7f219, type: 2}
+    - {fileID: 11400000, guid: 19bc1939dd40bf347aed81a49b3f6ef0, type: 2}
+  ListaDeListasSimple:
+  - LasEscenas:
+    - {fileID: 11400000, guid: f0404a3bd530d8e4c970ea027c8dacc5, type: 2}
+    - {fileID: 11400000, guid: bb98a133ae2f20e4b8e81fa3f5fa22a0, type: 2}
+    - {fileID: 11400000, guid: 2b6c2e5c8bcfec4498504c5079ac3755, type: 2}
+    - {fileID: 11400000, guid: 4f99ec6a42b942a40a5b363009f46da3, type: 2}
+    - {fileID: 11400000, guid: 3cf0b1fec2fc68b40aec093ec2d819a9, type: 2}
+    - {fileID: 11400000, guid: 08483df32b3a04946a1c12394f5ce31c, type: 2}
+    - {fileID: 11400000, guid: 25a384f684f3a4f4d9132c201e7ed247, type: 2}
+    - {fileID: 11400000, guid: 136409cd4a32eab41b6884cd6c4c19c6, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: ff47c048f7d8a32428dec4607debfb88, type: 2}
+    - {fileID: 11400000, guid: 9fb4723f8e5e66b49ac7dd222174d59e, type: 2}
+    - {fileID: 11400000, guid: c3d7bc07844005e448728a33d7f464a8, type: 2}
+    - {fileID: 11400000, guid: 10042324bf9ef3c41ba674317f6c5b98, type: 2}
+    - {fileID: 11400000, guid: 2ea707940f7cd834bac0b5617c96a8fe, type: 2}
+    - {fileID: 11400000, guid: ca2becdb483f7f449abe0490af8322e4, type: 2}
+    - {fileID: 11400000, guid: db771f433814a3842ab283698f49cb83, type: 2}
+    - {fileID: 11400000, guid: bb6cb647fe72572469fea0a8a7822ad5, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: d64910bc9f3d9c04c92e5e2d30503007, type: 2}
+    - {fileID: 11400000, guid: 0e7a7f077aec23c499f6c13a285a9844, type: 2}
+    - {fileID: 11400000, guid: 00657769a0ca4f24ebb1d1e6c270bcd3, type: 2}
+    - {fileID: 11400000, guid: de71eb6e277786a48b107587e24df4ed, type: 2}
+    - {fileID: 11400000, guid: 74b66c6ddbe443f45af73722f77b4ccd, type: 2}
+    - {fileID: 11400000, guid: 2890805bf916b0f479426303a1a59599, type: 2}
+    - {fileID: 11400000, guid: b42c21a09339d3a4885a112d284f04ae, type: 2}
+    - {fileID: 11400000, guid: b8771c5fab490ee4b8fe0f826628edea, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 4428a90896ceec34294f5e7d3e97752d, type: 2}
+    - {fileID: 11400000, guid: 6b9915c5562ce444395db6e7e0270af1, type: 2}
+    - {fileID: 11400000, guid: 9688ff01f85fcca40b94b82efafcf24c, type: 2}
+    - {fileID: 11400000, guid: 9aea5ccb033215f4ba3e8e35e287c85e, type: 2}
+    - {fileID: 11400000, guid: b4716dafe31be3e46b8d38a5dea716ce, type: 2}
+    - {fileID: 11400000, guid: a5674fa476421734288609d94db78fcd, type: 2}
+    - {fileID: 11400000, guid: 480c69b2cd0d95d4cbdc0542c5b03ab4, type: 2}
+    - {fileID: 11400000, guid: b6856e7887bea5e4db9279a72f2d5414, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: e8fae3a5580240f4e8ac14f8421ba977, type: 2}
+    - {fileID: 11400000, guid: f31d349e169fc20498de0f7b8fc1206a, type: 2}
+    - {fileID: 11400000, guid: 3694499e7c14fef49b064ccbafbe16b6, type: 2}
+    - {fileID: 11400000, guid: 48cec64656ade1a40b603f7c8e9b485a, type: 2}
+    - {fileID: 11400000, guid: c8a0cdce31044e046833f7d7884e0453, type: 2}
+    - {fileID: 11400000, guid: 08ddfd0e6c17f51448c8bad4b7be13bd, type: 2}
+    - {fileID: 11400000, guid: baf427133c6eb6b44b10098561c7e3cf, type: 2}
+    - {fileID: 11400000, guid: a118a383cbe63ff419c5bba96acee499, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 875235f12c385f743969b8ebf0d4cb4f, type: 2}
+    - {fileID: 11400000, guid: 6fb0f3fe49b48614bafcabcace3e1043, type: 2}
+    - {fileID: 11400000, guid: c97c4a323fc1c1e48b01f51a1c808477, type: 2}
+    - {fileID: 11400000, guid: 2a9385a076d0b8040a1a8f5a0bc02d21, type: 2}
+    - {fileID: 11400000, guid: b1cd29ca147198342a8a15aaa16f4393, type: 2}
+    - {fileID: 11400000, guid: 2fd9117bfc01c5f4bacd612e4cdb9e25, type: 2}
+    - {fileID: 11400000, guid: 1593a93f0f1e3ab4d8ada31879bd7708, type: 2}
+    - {fileID: 11400000, guid: 4f54195eef060524eaf8ade82a62eeef, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: cba47d150976dc949b8d739abb603349, type: 2}
+    - {fileID: 11400000, guid: 7e165bde9ada04d41a8941ea16d64748, type: 2}
+    - {fileID: 11400000, guid: 899d314b0cf484a498915e6ff4c45263, type: 2}
+    - {fileID: 11400000, guid: 588d8a5ca1feb7645aa1376e6b234ca3, type: 2}
+    - {fileID: 11400000, guid: 4a5f963ed52e0d54b89c4208177ec778, type: 2}
+    - {fileID: 11400000, guid: 8a80acb49fdf68641a3520eeeef366ad, type: 2}
+    - {fileID: 11400000, guid: 51634c40365badd4f96c760ba8f025ad, type: 2}
+    - {fileID: 11400000, guid: a25ab1e5e20314a4baafc73ea4f6fff3, type: 2}
+  - LasEscenas:
+    - {fileID: 11400000, guid: 05136d47b8f38b644bc3f169f4dbd76c, type: 2}
+    - {fileID: 11400000, guid: 08d42be1aa026474bab01592e841ded0, type: 2}
+    - {fileID: 11400000, guid: c56bf3663997c694eac768e36216628c, type: 2}
+    - {fileID: 11400000, guid: e47eac012c94e464988c8e24d7a22f6d, type: 2}
+    - {fileID: 11400000, guid: 601340efa6476c7469a7dfb2a524c761, type: 2}
+    - {fileID: 11400000, guid: af4e956e5c465ef4d95141ba82f453d1, type: 2}
+    - {fileID: 11400000, guid: 57ec18113110b7645aa9317feb5e621b, type: 2}
+    - {fileID: 11400000, guid: 974582807c40d4a47b972cee8f496630, type: 2}
+--- !u!4 &1106641623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106641620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.1, y: 2.3000002, z: 11.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133441465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1421,7 @@ GameObject:
   - component: {fileID: 1191174406}
   - component: {fileID: 1191174405}
   - component: {fileID: 1191174404}
+  - component: {fileID: 1191174411}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -1326,7 +1531,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -1346,7 +1551,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1418,6 +1623,19 @@ Transform:
   - {fileID: 1668946779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191174411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191174403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fd42ad6d3e96f4b85db40532cf7172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ElControlador: {fileID: 1106641622}
 --- !u!1 &1197820105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,3 +2827,4 @@ SceneRoots:
   - {fileID: 9290459}
   - {fileID: 2041134136}
   - {fileID: 1191174410}
+  - {fileID: 1106641623}

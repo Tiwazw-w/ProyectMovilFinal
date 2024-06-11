@@ -17,8 +17,15 @@ public class Movimientojugador : MonoBehaviour
 
     private void Update()
     {
-        Move();
-        Rotate();
+        if (InputAction)
+        {
+            Move();
+            Rotate();
+        }
+        else
+        {
+            MoveInput();
+        }
     }
 
     private void Move()
@@ -30,6 +37,7 @@ public class Movimientojugador : MonoBehaviour
         Vector3 rightMovement = transform.right * moveX;
 
         moveDirection = (forwardMovement + rightMovement).normalized;
+        moveDirection.y = 0;
 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
@@ -48,7 +56,10 @@ public class Movimientojugador : MonoBehaviour
     }
 
 
-
+    void MoveInput()
+    {
+        transform.position += moveDirection * moveSpeed * Time.deltaTime;
+    }
     public void MoveInput(InputAction.CallbackContext value)
     {
         Vector2 Move = value.ReadValue<Vector2>();
@@ -59,7 +70,7 @@ public class Movimientojugador : MonoBehaviour
         Vector3 rightMovement = transform.right * moveX;
 
         moveDirection = (forwardMovement + rightMovement).normalized;
-
+        moveDirection.y = 0;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
