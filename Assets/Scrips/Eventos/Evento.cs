@@ -2,8 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public abstract class Evento : ScriptableObject
+[System.Serializable]
+
+public  class Evento : ScriptableObject
 {
-    public abstract void ElEvento(GameObject x, Action action);
+    public virtual void ElEvento(GameObject x, UnityEvent action)
+    {
+
+    }
 }

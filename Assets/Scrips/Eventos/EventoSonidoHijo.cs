@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "EventoMove", menuName = "ScriptableObject/Eventos/SonidoHijo")]
 
@@ -15,7 +16,7 @@ public class EventoSonidoHijo : Evento
     [SerializeField] bool EsLoop;
     [SerializeField] float time;
     // Start is called before the first frame update
-    public override void ElEvento(GameObject x, Action action)
+    public override void ElEvento(GameObject x, UnityEvent action)
     {
         ActivarEvento();
     }
