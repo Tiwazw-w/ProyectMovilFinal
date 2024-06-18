@@ -2087,6 +2087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a324608d09de934b939db603fe92ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ElControlador: {fileID: 11400000, guid: 49f53c320956bb34c8598477501f2c45, type: 2}
 --- !u!1 &1930455774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,12 +2441,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1816132773}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: PlayGame
-        m_Mode: 1
+        m_MethodName: activarEscena
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

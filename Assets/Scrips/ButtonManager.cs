@@ -1,20 +1,14 @@
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("Gameplay");
-    }
-    public void OpenSettings()
-    {
-        SceneManager.LoadScene("NombreDeTuEscenaDeConfiguracion");
-    }
+    public SOSceneControler ElControlador;
 
-    public void OpenCredits()
+    public void activarEscena(int i, int j)
     {
-        SceneManager.LoadScene("NombreDeTuEscenaDeCreditos");
+        ElControlador.CargaryDescargarEscena(i, j);
     }
     public void QuitGame()
     {
