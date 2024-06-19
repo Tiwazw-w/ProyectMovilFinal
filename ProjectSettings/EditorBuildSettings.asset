@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/EscenaPrincipal.unity
@@ -23,4 +24,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 5452ac0e39225a04bb7f123d983114f4
+=======
+  m_Scenes: []
+>>>>>>> Stashed changes
   m_configObjects: {}
