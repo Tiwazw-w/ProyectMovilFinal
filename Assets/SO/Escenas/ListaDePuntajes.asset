@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
-  m_Name: Settings
+  m_Name: ListaDePuntajes
   m_EditorClassIdentifier: 
-  Escena: {fileID: 0}
+  Escena: {fileID: 102900000, guid: b25ce8cb290af954288e53d58e9e9008, type: 3}
   EstaActivo: 0

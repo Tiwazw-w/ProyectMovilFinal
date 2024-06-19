@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ListaDeEscenas:
   - {fileID: 11400000, guid: 293831410caa74d4e8b219b73b24fdb6, type: 2}
+  - {fileID: 11400000, guid: fdd47741ce6b604448f8ce50574c813f, type: 2}
+  - {fileID: 11400000, guid: ee10b1e328b93ca4e8af1d005552da05, type: 2}
   - {fileID: 11400000, guid: 88bf19b7d4248994fa866ec87b69baff, type: 2}
   - {fileID: 11400000, guid: 0a0513c9e5eb2a546951fbba9e9711b9, type: 2}
+  - {fileID: 11400000, guid: ca37287b84024944f8a0d1dce798c0ab, type: 2}

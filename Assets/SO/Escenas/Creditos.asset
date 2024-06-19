@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
-  m_Name: Menu
+  m_Name: Creditos
   m_EditorClassIdentifier: 
-  Escena: {fileID: 102900000, guid: 57cbe8014cc86c24eacf44065e92cadf, type: 3}
+  Escena: {fileID: 102900000, guid: e120047bd3a22d74dac378449de10284, type: 3}
   EstaActivo: 0

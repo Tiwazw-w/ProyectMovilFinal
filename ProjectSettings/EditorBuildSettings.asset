@@ -6,28 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/EscenaPrincipal.unity
+    guid: 831ca673bd87d9c4780f5fa4ebc0452d
+  - enabled: 1
     path: Assets/Scenes/MenuGozu.unity
     guid: 57cbe8014cc86c24eacf44065e92cadf
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: e120047bd3a22d74dac378449de10284
   - enabled: 1
-    path: Assets/Omar/GmePru.unity
-    guid: 610c1b68addf24246952831019cf6fa4
-<<<<<<< Updated upstream
+    path: Assets/Scenes/ListadeCreditos.unity
+    guid: b25ce8cb290af954288e53d58e9e9008
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: c850ee8c3b14cc8459e7e186857cf567
+    path: Assets/Scenes/Login_Register.unity
+    guid: 509e3f48c3523494bb7cdb003c00fdf5
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
-    guid: d955f65fd29a21a4a83839882cbb7681
-  m_configObjects:
-=======
-  m_configObjects:
-    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 58a1fd82a16caa44d96dc3b3f9f2e25e,
-      type: 2}
-    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
-      guid: 53d59d690a2a7d9419e6ad388997c42e, type: 2}
->>>>>>> Stashed changes
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
-      guid: bd12ae2c3e7b91d47b53a926be357106, type: 2}
+    path: Assets/Scenes/Settings.unity
+    guid: 5452ac0e39225a04bb7f123d983114f4
+  m_configObjects: {}
