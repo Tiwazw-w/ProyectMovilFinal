@@ -8,14 +8,15 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "NuevoObjeto", menuName = "SO/Escenas/LaEscena")]
 public class SOScene : ScriptableObject
 {
-    public SceneAsset Escena;
+    //public SceneManager Escena;
+    public string NombreEscena;
     public bool EstaActivo;
     public void CargarEscena()
     {
         Debug.Log("2");
         if (!EstaActivo)
         {
-            SceneManager.LoadSceneAsync(Escena.name, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(NombreEscena, LoadSceneMode.Additive);
             EstaActivo = true;
             Debug.Log("3");
         }
@@ -25,7 +26,7 @@ public class SOScene : ScriptableObject
     {
         if (EstaActivo)
         {
-            SceneManager.UnloadSceneAsync(Escena.name, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            SceneManager.UnloadSceneAsync(NombreEscena, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             EstaActivo = false;
         }
         // Descargar la escena por su nombre

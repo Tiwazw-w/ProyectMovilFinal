@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Omar/GmePru.unity
     guid: 610c1b68addf24246952831019cf6fa4
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 58a1fd82a16caa44d96dc3b3f9f2e25e,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: 53d59d690a2a7d9419e6ad388997c42e, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: bd12ae2c3e7b91d47b53a926be357106, type: 2}

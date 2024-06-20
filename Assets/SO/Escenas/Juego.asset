@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
   m_Name: Juego
   m_EditorClassIdentifier: 
-  Escena: {fileID: 102900000, guid: 610c1b68addf24246952831019cf6fa4, type: 3}
+  NombreEscena: GmePru
   EstaActivo: 0

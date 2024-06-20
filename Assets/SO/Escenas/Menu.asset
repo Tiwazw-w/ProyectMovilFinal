@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
   m_Name: Menu
   m_EditorClassIdentifier: 
-  Escena: {fileID: 102900000, guid: 57cbe8014cc86c24eacf44065e92cadf, type: 3}
+  NombreEscena: MenuGozu
   EstaActivo: 0

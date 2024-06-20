@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
   m_Name: LoginRegister
   m_EditorClassIdentifier: 
-  Escena: {fileID: 102900000, guid: 509e3f48c3523494bb7cdb003c00fdf5, type: 3}
+  NombreEscena: Login_Register
   EstaActivo: 0
