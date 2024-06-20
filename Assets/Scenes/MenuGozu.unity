@@ -237,7 +237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42813780}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 260947929}
   - component: {fileID: 260947928}
   - component: {fileID: 260947927}
+  - component: {fileID: 260947931}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -536,6 +537,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &260947931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260947926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3dcba0b5129a647853bb517882f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListaDeObjetosUIButon:
+  - {fileID: 42813782}
+  - {fileID: 1798296847}
+  - {fileID: 1583529020}
+  - {fileID: 1038034263}
+  ListaDeObjetosUIImage: []
+  ListaDeObjetosUITextMeshPro:
+  - {fileID: 1301982988}
+  - {fileID: 1229307692}
+  - {fileID: 798930984}
+  - {fileID: 1022613375}
+  - {fileID: 765170388}
+  Duracion: 2
+  ControladorDeEscenas: {fileID: 11400000, guid: 49f53c320956bb34c8598477501f2c45,
+    type: 2}
 --- !u!1 &290678306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,7 +1538,7 @@ GameObject:
   - component: {fileID: 765170389}
   - component: {fileID: 765170388}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1645,7 +1673,7 @@ GameObject:
   - component: {fileID: 798930985}
   - component: {fileID: 798930984}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2148,7 +2176,7 @@ GameObject:
   - component: {fileID: 1022613376}
   - component: {fileID: 1022613375}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)Creditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,7 +2401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038034261}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7595,7 +7623,7 @@ GameObject:
   - component: {fileID: 1229307693}
   - component: {fileID: 1229307692}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8190,9 +8218,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 49f53c320956bb34c8598477501f2c45, type: 2}
-        m_TargetAssemblyTypeName: SOSceneControler, Assembly-CSharp
-        m_MethodName: CargarEscena
+      - m_Target: {fileID: 260947931}
+        m_TargetAssemblyTypeName: UI_pausa, Assembly-CSharp
+        m_MethodName: DesactivarObjetos
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8209,7 +8237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583529018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -8608,9 +8636,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 49f53c320956bb34c8598477501f2c45, type: 2}
-        m_TargetAssemblyTypeName: SOSceneControler, Assembly-CSharp
-        m_MethodName: CargarEscena
+      - m_Target: {fileID: 260947931}
+        m_TargetAssemblyTypeName: UI_pausa, Assembly-CSharp
+        m_MethodName: DesactivarObjetos
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8627,7 +8655,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798296845}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

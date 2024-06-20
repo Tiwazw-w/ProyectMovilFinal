@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1ae597a3c3024c9631a9ceee1632e, type: 3}
   m_Name: Settings 1
   m_EditorClassIdentifier: 
-  Escena: {fileID: 102900000, guid: 5452ac0e39225a04bb7f123d983114f4, type: 3}
-  EstaActivo: 0
+  Escena: {fileID: 102900000, guid: 09beb6ec920716c4aba2cc7cde6d4d90, type: 3}
+  EstaActivo: 1

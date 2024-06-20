@@ -8,7 +8,7 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "NuevoObjeto", menuName = "SO/Escenas/LaEscena")]
 public class SOScene : ScriptableObject
 {
-    [SerializeField] SceneAsset Escena;
+    public SceneAsset Escena;
     public bool EstaActivo;
     public void CargarEscena()
     {
