@@ -16,9 +16,16 @@ public class UI_pausa : MonoBehaviour
     [SerializeField] List<Button> ListaDeObjetosUIButon = new List<Button>();
     [SerializeField] List<Image> ListaDeObjetosUIImage = new List<Image>();
     [SerializeField] List<TMP_Text> ListaDeObjetosUITextMeshPro = new List<TMP_Text>();
+    [SerializeField] List<FixedJoystick> ListaDeInputs = new List<FixedJoystick>();
 
     [SerializeField] float Duracion;
+    public bool _EstaEnEljuego;
     public SOSceneControler ControladorDeEscenas;
+
+    public void EstaEnEljuego()
+    {
+        _EstaEnEljuego = true;
+    }
 
     private void Awake()
     {
@@ -38,16 +45,14 @@ public class UI_pausa : MonoBehaviour
         for(int i = 0; i < ListaDeObjetosUIButon.Count; i++)
         {
             ListaDeObjetosUIButon[i].interactable = false;
-            /*
-            else if (ListaDeObjetosUIInteractuables[i].GetComponent<Button>())
-            {
-
-            }
-            */
+        }
+        for (int i = 0; i < ListaDeInputs.Count; i++)
+        {
+            ListaDeInputs[i].enabled = false;
         }
 
 
-        for(int i = 0; i < ListaDeObjetosUIImage.Count; i++)
+        for (int i = 0; i < ListaDeObjetosUIImage.Count; i++)
         {
             if (i == 0)
             {
@@ -90,12 +95,16 @@ public class UI_pausa : MonoBehaviour
             }
             */
         }
+        for (int i = 0; i < ListaDeInputs.Count; i++)
+        {
+            ListaDeInputs[i].enabled = true;
+        }
 
         for (int i = 0; i < ListaDeObjetosUIImage.Count; i++)
         {
             if (i == 0)
             {
-                ListaDeObjetosUIImage[i].DOFade(1, Duracion);
+                ListaDeObjetosUIImage[i].DOFade(1, Duracion).OnComplete(() => ElTiempo(1));
             }
             else
             {
@@ -107,7 +116,7 @@ public class UI_pausa : MonoBehaviour
         {
             if (i == 0)
             {
-                ListaDeObjetosUITextMeshPro[i].DOFade(1, Duracion);
+                ListaDeObjetosUITextMeshPro[i].DOFade(1, Duracion).OnComplete(() => ElTiempo(1));
             }
             else
             {
@@ -118,6 +127,8 @@ public class UI_pausa : MonoBehaviour
 
 
     }
-
-
+    public void ElTiempo(float x)
+    {
+        Time.timeScale = x;
+    }
 }
