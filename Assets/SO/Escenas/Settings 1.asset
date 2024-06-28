@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Settings 1
   m_EditorClassIdentifier: 
   NombreEscena: Settings
-  EstaActivo: 1
+  EstaActivo: 0
