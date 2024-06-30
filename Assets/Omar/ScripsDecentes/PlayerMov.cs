@@ -1,12 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerMov : MonoBehaviour
 {
     public Joystick movementJoystick;
     public Joystick cameraJoystick;
     public float movementSpeed = 10f;
     public float rotationSpeed = 100f;
+    public float currentBattery;
     public Transform cameraTransform;
+    public BatteryPool batteryPool;
+    public Linterna LinMAXlc;
 
     private float cameraPitch = 0f;
     private Rigidbody rb;
@@ -14,12 +18,13 @@ public class PlayerMov : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true; // Freeze rotation on all axes
+        rb.freezeRotation = true;
+        currentBattery = LinMAXlc.energia_Actual;
     }
 
     private void Update()
     {
-        // Movimiento del jugador
+        
         float horizontal = movementJoystick.Horizontal;
         float vertical = movementJoystick.Vertical;
 
@@ -32,18 +37,28 @@ public class PlayerMov : MonoBehaviour
             rb.MovePosition(rb.position + moveDirection * movementSpeed * Time.deltaTime);
         }
 
-        // Rotación de la cámara
+        
         float lookHorizontal = cameraJoystick.Horizontal;
         float lookVertical = cameraJoystick.Vertical;
 
-        // Rotar el jugador en el eje Y (girar la cámara de lado a lado)
+        
         transform.Rotate(Vector3.up * lookHorizontal * rotationSpeed * Time.deltaTime);
 
-        // Ajustar el pitch de la cámara (girar la cámara hacia arriba y hacia abajo)
+        
         cameraPitch -= lookVertical * rotationSpeed * Time.deltaTime;
-        cameraPitch = Mathf.Clamp(cameraPitch, -45f, 45f); // Limitar el ángulo de la cámara
+        cameraPitch = Mathf.Clamp(cameraPitch, -45f, 45f); 
 
         cameraTransform.localEulerAngles = new Vector3(cameraPitch, 0f, 0f);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Battery"))
+        {
+            currentBattery = Mathf.Clamp(currentBattery + 20f, 0, LinMAXlc.energia_Actual);
+            other.gameObject.SetActive(false);
+            batteryPool.ReactivateBattery(other.gameObject);
+        }
     }
 }
 
