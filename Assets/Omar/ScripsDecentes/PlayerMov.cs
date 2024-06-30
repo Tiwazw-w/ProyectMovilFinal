@@ -7,7 +7,6 @@ public class PlayerMov : MonoBehaviour
     public Joystick cameraJoystick;
     public float movementSpeed = 10f;
     public float rotationSpeed = 100f;
-    public float currentBattery;
     public Transform cameraTransform;
     public BatteryPool batteryPool;
     public Linterna LinMAXlc;
@@ -19,7 +18,7 @@ public class PlayerMov : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        currentBattery = LinMAXlc.energia_Actual;
+        LinMAXlc = GetComponent<Linterna>();
     }
 
     private void Update()
@@ -55,9 +54,10 @@ public class PlayerMov : MonoBehaviour
     {
         if (other.CompareTag("Battery"))
         {
-            currentBattery = Mathf.Clamp(currentBattery + 20f, 0, LinMAXlc.energia_Actual);
+            LinMAXlc.energia_Actual = Mathf.Clamp(LinMAXlc.energia_Actual + 50f, 0, LinMAXlc.energia_Maxima);
             other.gameObject.SetActive(false);
             batteryPool.ReactivateBattery(other.gameObject);
+            Debug.Log("recarga");
         }
     }
 }
