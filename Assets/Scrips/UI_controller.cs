@@ -22,12 +22,16 @@ public class UI_controller : MonoBehaviour
     private void Awake()
     {
         MovimientoPanel.transform.position = PosicionGuiaExterno.transform.position;
-        if (UI_pausa.instance._EstaEnEljuego)
+        if(UI_pausa.instance != null)
         {
-            UI_pausa.instance.EstaEnEljuego();
-            Buton.SetActive(true);
-            //Time.timeScale = 0;
+            if (UI_pausa.instance._EstaEnEljuego)
+            {
+                UI_pausa.instance.EstaEnEljuego();
+                Buton.SetActive(true);
+                //Time.timeScale = 0;
+            }
         }
+            
     }
     private void Start()
     {
