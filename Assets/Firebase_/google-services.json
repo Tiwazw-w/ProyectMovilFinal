@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "777173486977",
+    "firebase_url": "https://shadows-of-the-forest-default-rtdb.firebaseio.com",
+    "project_id": "shadows-of-the-forest",
+    "storage_bucket": "shadows-of-the-forest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777173486977:android:4e4f9e2cdbcd711298ac80",
+        "android_client_info": {
+          "package_name": "com.CositosStudio.ShadowsoftheForest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOTmsmjXlDqCRo9-SlSKGiNIwRdOlwHTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
