@@ -14,7 +14,7 @@ public class ControladorDeNotas : MonoBehaviour
     public void SeObtuvoUnaPista()
     {
         CantidadPistasObtenidas += 1;
-        Texto.text = CantidadPistasObtenidas + "/" + CantidadMaxPistas;
+        Texto.text = "Notas " + CantidadPistasObtenidas + "/" + CantidadMaxPistas;
         if(CantidadPistasObtenidas == CantidadMaxPistas)
         {
             ElEvento.Invoke();

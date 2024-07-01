@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColicionadorPistas : MonoBehaviour
 {
     List<ListaDeEventosGuardados> ListaDeEventos;
+    [SerializeField] ControladorDeNotas ElControladorDeNotas;
 
     public void ActivarEvento()
     {
@@ -18,6 +19,7 @@ public class ColicionadorPistas : MonoBehaviour
     {
         if (other.GetComponent<Pista>())
         {
+            ElControladorDeNotas.SeObtuvoUnaPista();
             ListaDeEventos = other.GetComponent<Pista>().ElEvento;
             ActivarEvento();
             Destroy(other.gameObject);

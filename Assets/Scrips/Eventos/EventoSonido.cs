@@ -13,7 +13,7 @@ public class EventoSonido : Evento
     [SerializeField] AudioSourcePoolling ElGeneradorDeAudios;
     [SerializeField] AudioClip ElClip;
     [SerializeField] AudioMixerGroup nuevoGrupo;
-    [SerializeField] Vector2 Posicion;
+    public Vector2 Posicion;
     [SerializeField] bool EsLoop;
     [SerializeField] float time;
     // Start is called before the first frame update
